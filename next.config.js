@@ -19,7 +19,8 @@ const nextConfig = {
 
   // Performance optimizations
   experimental: {
-    optimizeCss: true,
+    // Disabled due to critters dependency issues on Netlify
+    // optimizeCss: true,
   },
 
   // Compression
