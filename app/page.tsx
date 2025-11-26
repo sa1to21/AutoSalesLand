@@ -5,7 +5,8 @@ import {
   Play, Zap, CreditCard, Lock, MessageCircle,
   ChevronDown, Menu, X,
   Check, ArrowRight, Wallet,
-  XCircle, CheckCircle, Sparkles, HelpCircle, AlertCircle
+  XCircle, CheckCircle, Sparkles, HelpCircle, AlertCircle,
+  User
 } from 'lucide-react';
 
 const Home = () => {
@@ -151,8 +152,8 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
                  <div className="flex -space-x-3">
                     {[1,2,3,4].map(i => (
-                      <div key={i} className={`w-10 h-10 rounded-full border-2 border-[#09090b] bg-gradient-to-br ${i === 1 ? 'from-indigo-600 to-violet-600' : i === 2 ? 'from-fuchsia-600 to-pink-600' : i === 3 ? 'from-cyan-600 to-blue-600' : 'from-emerald-600 to-teal-600'} flex items-center justify-center text-xs font-bold text-white opacity-80 hover:opacity-100 transition-opacity`}>
-                        {String.fromCharCode(65 + i)}
+                      <div key={i} className={`w-10 h-10 rounded-full border-2 border-[#09090b] bg-gradient-to-br ${i === 1 ? 'from-indigo-600 to-violet-600' : i === 2 ? 'from-fuchsia-600 to-pink-600' : i === 3 ? 'from-cyan-600 to-blue-600' : 'from-emerald-600 to-teal-600'} flex items-center justify-center text-xs font-bold text-white opacity-80 hover:opacity-100 transition-opacity shadow-lg`}>
+                        <User size={18} strokeWidth={2.5} />
                       </div>
                     ))}
                  </div>
