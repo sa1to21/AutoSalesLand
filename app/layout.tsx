@@ -5,7 +5,7 @@ import './globals.css'
 const inter = Inter({ subsets: ['latin', 'cyrillic'] })
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://autosalesbot.ru'),
+  metadataBase: new URL('https://autosalesbot.online'),
   title: {
     default: 'AutoSalesBot - Автоматический бот для продажи гайдов в Telegram',
     template: '%s | AutoSalesBot'
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'ru_RU',
-    url: 'https://autosalesbot.ru',
+    url: 'https://autosalesbot.online',
     siteName: 'AutoSalesBot',
     title: 'AutoSalesBot - Автоматический бот для продажи гайдов в Telegram',
     description: 'Автоматический бот-магазин для продажи гайдов и цифровых продуктов в Telegram. Принимает оплату прямо в чате, выдает файлы мгновенно.',
@@ -78,7 +78,7 @@ export const metadata: Metadata = {
     // yandex: 'your-yandex-verification-code',
   },
   alternates: {
-    canonical: 'https://autosalesbot.ru',
+    canonical: 'https://autosalesbot.online',
   },
   category: 'technology',
 }
@@ -116,8 +116,8 @@ export default function RootLayout({
     '@context': 'https://schema.org',
     '@type': 'Organization',
     name: 'AutoSalesBot',
-    url: 'https://autosalesbot.ru',
-    logo: 'https://autosalesbot.ru/icon.png',
+    url: 'https://autosalesbot.online',
+    logo: 'https://autosalesbot.online/icon.png',
     contactPoint: {
       '@type': 'ContactPoint',
       contactType: 'Customer Service',

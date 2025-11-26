@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next'
 
 export default function robots(): MetadataRoute.Robots {
-  const baseUrl = 'https://autosalesbot.ru'
+  const baseUrl = 'https://autosalesbot.online'
 
   return {
     rules: [
