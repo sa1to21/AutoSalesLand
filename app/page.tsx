@@ -173,9 +173,11 @@ const Home = () => {
                  <div className="flex-1 bg-[#121212] pt-14 pb-4 px-3 flex flex-col gap-3 relative overflow-hidden">
                     <div className="absolute top-0 left-0 w-full h-20 bg-[#121212] border-b border-zinc-800 flex items-end pb-3 px-4 z-10">
                        <div className="flex items-center gap-3 w-full">
-                          <div className="w-10 h-10 rounded-full bg-gradient-to-br from-indigo-600 to-violet-600 flex items-center justify-center text-sm text-white font-bold shadow-md">B</div>
+                          <div className="w-10 h-10 flex items-center justify-center">
+                            <img src="/flash-sale.svg" alt="AutoSalesBot" className="w-full h-full" />
+                          </div>
                           <div className="flex-1">
-                             <div className="font-bold text-sm text-white">Shop Bot</div>
+                             <div className="font-bold text-sm text-white">AutoSalesBot</div>
                              <div className="text-xs text-indigo-400 font-medium">bot</div>
                           </div>
                        </div>
@@ -195,11 +197,7 @@ const Home = () => {
                            </div>
                            <div className="p-3">
                               <h4 className="font-bold text-white text-sm mb-1">Гайд &quot;Быстрый Старт&quot;</h4>
-                              <p className="text-xs text-zinc-400 mb-3">PDF файл, 45 страниц. Мгновенная доставка.</p>
-                              <div className="font-bold text-white text-sm mb-3">990 ₽</div>
-                              <div className="bg-indigo-600 hover:bg-indigo-500 text-white py-2.5 rounded-xl text-center font-bold text-xs shadow-lg shadow-indigo-900/30 cursor-pointer transition-colors">
-                                Купить сейчас
-                              </div>
+                              <p className="text-xs text-zinc-400">PDF файл, 45 страниц. Мгновенная доставка.</p>
                            </div>
                         </div>
 
