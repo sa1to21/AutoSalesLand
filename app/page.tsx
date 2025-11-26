@@ -5,7 +5,8 @@ import {
   Play, Zap, CreditCard, Lock, MessageCircle,
   ChevronDown, Menu, X,
   Check, ArrowRight, Wallet,
-  XCircle, CheckCircle, Sparkles, HelpCircle, AlertCircle
+  XCircle, CheckCircle, Sparkles, HelpCircle, AlertCircle,
+  ShoppingCart, Download, Shield, Clock
 } from 'lucide-react';
 
 const Home = () => {
@@ -221,6 +222,68 @@ const Home = () => {
             </div>
 
           </div>
+        </div>
+      </section>
+
+      {/* --- HOW IT WORKS --- */}
+      <section className="py-20 px-4 relative overflow-hidden" aria-label="Как это работает">
+        <div className="container mx-auto max-w-6xl">
+          <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 text-white">Как это работает?</h2>
+
+          <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+
+            {/* Step 1 */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-500/40 to-indigo-600/40 rounded-full blur-xl group-hover:blur-2xl transition-all"></div>
+                <div className="relative w-20 h-20 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-full flex items-center justify-center shadow-lg">
+                  <ShoppingCart size={32} className="text-white" strokeWidth={2.5} />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Выбор товара</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">Клиент видит каталог и выбирает продукт</p>
+            </div>
+
+            {/* Step 2 */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-500/40 to-rose-600/40 rounded-full blur-xl group-hover:blur-2xl transition-all"></div>
+                <div className="relative w-20 h-20 bg-gradient-to-br from-pink-500 to-rose-600 rounded-full flex items-center justify-center shadow-lg">
+                  <CreditCard size={32} className="text-white" strokeWidth={2.5} />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Оплата</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">Мгновенная оплата прямо в Telegram</p>
+            </div>
+
+            {/* Step 3 */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-500/40 to-violet-600/40 rounded-full blur-xl group-hover:blur-2xl transition-all"></div>
+                <div className="relative w-20 h-20 bg-gradient-to-br from-purple-500 to-violet-600 rounded-full flex items-center justify-center shadow-lg">
+                  <Shield size={32} className="text-white" strokeWidth={2.5} />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Проверка</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">Автоматическая проверка платежа</p>
+            </div>
+
+            {/* Step 4 */}
+            <div className="flex flex-col items-center text-center group">
+              <div className="relative mb-6">
+                <div className="absolute inset-0 bg-gradient-to-br from-emerald-500/40 to-green-600/40 rounded-full blur-xl group-hover:blur-2xl transition-all"></div>
+                <div className="relative w-20 h-20 bg-gradient-to-br from-emerald-500 to-green-600 rounded-full flex items-center justify-center shadow-lg">
+                  <Download size={32} className="text-white" strokeWidth={2.5} />
+                </div>
+              </div>
+              <h3 className="text-lg font-bold text-white mb-2">Получение</h3>
+              <p className="text-sm text-zinc-400 leading-relaxed">Файл доставлен за 1 секунду</p>
+            </div>
+
+          </div>
+
+          {/* Timeline connector for desktop */}
+          <div className="hidden md:block absolute top-[180px] left-1/2 -translate-x-1/2 w-[calc(100%-280px)] max-w-[900px] h-0.5 bg-gradient-to-r from-blue-500/20 via-pink-500/20 via-purple-500/20 to-emerald-500/20"></div>
         </div>
       </section>
 
